@@ -1,6 +1,6 @@
 depth = -y;
 
-// Lógica de movimentação
+// Lógica de movimentação 
 
 right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 left = keyboard_check(ord("A")) or keyboard_check(vk_left);
