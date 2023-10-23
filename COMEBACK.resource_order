@@ -19,10 +19,8 @@
   "ResourceOrderSettings": [
     {"name":"spr_torre","order":3,"path":"sprites/spr_torre/spr_torre.yy",},
     {"name":"obj_casa","order":1,"path":"objects/obj_casa/obj_casa.yy",},
-    {"name":"obj_control","order":6,"path":"objects/obj_control/obj_control.yy",},
     {"name":"obj_surf","order":4,"path":"objects/obj_surf/obj_surf.yy",},
     {"name":"spr_linha","order":4,"path":"sprites/spr_linha/spr_linha.yy",},
-    {"name":"obj_linha","order":8,"path":"objects/obj_linha/obj_linha.yy",},
     {"name":"obj_block","order":3,"path":"objects/obj_block/obj_block.yy",},
     {"name":"obj_camera","order":9,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"spr_pixel","order":5,"path":"sprites/spr_pixel/spr_pixel.yy",},

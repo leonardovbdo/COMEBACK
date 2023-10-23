@@ -36,10 +36,8 @@
   "resources": [
     {"id":{"name":"spr_torre","path":"sprites/spr_torre/spr_torre.yy",},},
     {"id":{"name":"obj_casa","path":"objects/obj_casa/obj_casa.yy",},},
-    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_surf","path":"objects/obj_surf/obj_surf.yy",},},
     {"id":{"name":"spr_linha","path":"sprites/spr_linha/spr_linha.yy",},},
-    {"id":{"name":"obj_linha","path":"objects/obj_linha/obj_linha.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
