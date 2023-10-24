@@ -38,6 +38,7 @@
     {"id":{"name":"obj_casa","path":"objects/obj_casa/obj_casa.yy",},},
     {"id":{"name":"obj_surf","path":"objects/obj_surf/obj_surf.yy",},},
     {"id":{"name":"spr_linha","path":"sprites/spr_linha/spr_linha.yy",},},
+    {"id":{"name":"spr_player_viajando","path":"sprites/spr_player_viajando/spr_player_viajando.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},

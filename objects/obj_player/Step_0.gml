@@ -44,18 +44,44 @@ if keyboard_check_pressed(ord("X")) {
 }
 
 
-if	keyboard_check(ord("Z")) {
-	is_viajando = true;
-	var _vel = 4;
-	var targetTower = instance_nearest(x, y, obj_torre);
-	var _dir = point_direction(x, y, targetTower.previous_tower.x, targetTower.previous_tower.y);
-	var distance = point_distance(x, y, targetTower.previous_tower.x, targetTower.previous_tower.y);
-	
-	x+= lengthdir_x(_vel , _dir);
-	y+= lengthdir_y(_vel , _dir);
+// Verifique se a tecla "Z" foi pressionada
+if (keyboard_check_pressed(ord("Z"))) {
+    var target_tower = instance_place(x, y, obj_torre);
+    
+    if (target_tower != noone) {
+        current_tower = target_tower;
+        is_viajando = true;
+    }
 }
 
+if (current_tower != noone) {
+	if current_tower.previous_tower == noone {
+		is_viajando = false;	
+	} else {
+	    var _vel = 4;
+	    var _dir = point_direction(x, y, current_tower.previous_tower.x, current_tower.previous_tower.y);
+    
+	    // Verifique se o jogador está próximo o suficiente da previous_tower para atualizar a current_tower
+	    if (point_distance(x, y, current_tower.previous_tower.x, current_tower.previous_tower.y) < 5) {
+	        if (keyboard_check(ord("Z"))) {
+	            current_tower = current_tower.previous_tower;
+	        } else {
+	            // Pare o jogador e defina is_viajando como falso
+	            is_viajando = false;
+	        }
+	    }
+		if is_viajando == true {
+		    x += lengthdir_x(_vel, _dir);
+		    y += lengthdir_y(_vel, _dir);
+			sprite_index = spr_player_viajando;
+			
+		}
+	}
+}
 
+if is_viajando == false {
+	sprite_index = spr_player	
+}
 
 
 
