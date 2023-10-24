@@ -21,8 +21,8 @@ linha_dir = -1;
 last_tower = instance_find(obj_torre, 0);
 new_tower = noone;
 
-// Variável global para armazenar as linhas desenhadas
-global.lines = ds_list_create(); // Crie uma lista de dados para armazenar as linhas
+// Variável global para armazenar as linhas desenhadas (obsoleto...)
+// global.lines = ds_list_create(); // Crie uma lista de dados para armazenar as linhas
 
 current_tower = noone;
 
