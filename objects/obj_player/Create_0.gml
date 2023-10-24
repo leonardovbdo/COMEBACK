@@ -16,6 +16,8 @@ surface = -1;
 
 is_viajando = false;
 
+linha_dir = -1;
+
 last_tower = instance_find(obj_torre, 0);
 new_tower = noone;
 

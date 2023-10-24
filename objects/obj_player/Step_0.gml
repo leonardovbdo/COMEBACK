@@ -2,6 +2,35 @@ depth = -y;
 
 // Lógica de movimentação 
 
+/*
+
+if keyboard_check(vk_up) {
+	y-= 0.5;	
+}
+
+if keyboard_check(vk_down) {
+	y+= 0.5;	
+}
+
+if keyboard_check(vk_left) {
+	x-= 0.5;	
+}
+
+if keyboard_check(vk_right) {
+	x+= 0.5;	
+}
+
+var _yy = keyboard_check(vk_up) or keyboard_check(vk_down);
+var _xx = keyboard_check(vk_left) or keyboard_check(vk_right);
+
+if _yy or _xx {
+	image_speed =1	
+} else {
+	image_speed = 0;	
+}
+
+*/
+
 right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 up = keyboard_check(ord("W")) or keyboard_check(vk_up);
@@ -59,7 +88,7 @@ if (current_tower != noone) {
 		is_viajando = false;	
 	} else {
 	    var _vel = 4;
-	    var _dir = point_direction(x, y, current_tower.previous_tower.x, current_tower.previous_tower.y);
+	    linha_dir = point_direction(x, y, current_tower.previous_tower.x, current_tower.previous_tower.y);
     
 	    // Verifique se o jogador está próximo o suficiente da previous_tower para atualizar a current_tower
 	    if (point_distance(x, y, current_tower.previous_tower.x, current_tower.previous_tower.y) < 5) {
@@ -71,8 +100,8 @@ if (current_tower != noone) {
 	        }
 	    }
 		if is_viajando == true {
-		    x += lengthdir_x(_vel, _dir);
-		    y += lengthdir_y(_vel, _dir);
+		    x += lengthdir_x(_vel, linha_dir);
+		    y += lengthdir_y(_vel, linha_dir);
 			sprite_index = spr_player_viajando;
 			
 		}
@@ -83,8 +112,9 @@ if is_viajando == false {
 	sprite_index = spr_player	
 }
 
-
-
+if keyboard_check(ord("R")) {
+	room_restart();	
+}
 
 
 

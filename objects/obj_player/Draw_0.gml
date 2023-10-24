@@ -35,4 +35,3 @@ for (var i = 0; i < ds_list_size(global.lines); i++) {
 }
 
 draw_set_alpha(1)
-
