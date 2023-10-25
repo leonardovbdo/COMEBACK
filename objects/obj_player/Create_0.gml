@@ -33,4 +33,9 @@ foi_pressionado = false;
 vida = 30;
 vida_sprites = ds_map_create();
 
+// Defina um dicionário (ou mapeamento) para associar valores de vida aos sprites
+ds_map_add(vida_sprites, 30, spr_player);
+ds_map_add(vida_sprites, 20, spr_player_metade_vida);
+ds_map_add(vida_sprites, 10, spr_player_zero_vida);
+
 alarm[0] = 0;

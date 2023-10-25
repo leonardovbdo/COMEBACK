@@ -118,14 +118,16 @@ if keyboard_check(ord("R")) {
 
 
 // Combate
-// Defina um dicionário (ou mapeamento) para associar valores de vida aos sprites
-ds_map_add(vida_sprites, 30, spr_player);
-ds_map_add(vida_sprites, 20, spr_player_metade_vida);
-ds_map_add(vida_sprites, 10, spr_player_zero_vida);
 
 // Verifique se o valor de vida existe no dicionário.
 if !is_viajando && ds_map_exists(vida_sprites, vida) {
     sprite_index = ds_map_find_value(vida_sprites, vida);
+}
+
+if alarm[0] > 0 {
+	image_alpha = 0.5;	
+} else {
+	image_alpha = 1;	
 }
 
 if vida <= 0 {
