@@ -1,0 +1,1 @@
+ds_map_destroy(vida_sprites); // Certifique-se de destruir o dicionário quando ele não for mais necessário.

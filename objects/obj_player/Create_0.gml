@@ -27,3 +27,10 @@ new_tower = noone;
 current_tower = noone;
 
 foi_pressionado = false;
+
+// Combate
+
+vida = 30;
+vida_sprites = ds_map_create();
+
+alarm[0] = 0;
