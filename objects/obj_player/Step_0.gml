@@ -41,7 +41,7 @@ if (_xx != 0 or _yy != 0) and !is_viajando {
 // Pode posicionar torre área
 var _list = ds_list_create();
 	
-	var _num = collision_circle_list(x, y+5, 27, obj_torre, true, true, _list, false);
+	var _num = collision_circle_list(x, y+5, 27, obj_torre_pai, true, true, _list, false);
 	
 	if _num > 0 and !is_viajando
 	{

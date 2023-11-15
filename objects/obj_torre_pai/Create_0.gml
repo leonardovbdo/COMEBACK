@@ -18,3 +18,4 @@ if obj_player.last_tower != noone {
 }
 
 is_proximo = false;
+
