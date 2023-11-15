@@ -11,4 +11,5 @@ if is_viajando {
 	instance_create_layer(other.x, other.y, "Instances", obj_explosion);
 	instance_destroy(other);	
 	torres_disponiveis++;
+	inimigos_mortos++;
 }

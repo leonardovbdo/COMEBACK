@@ -47,3 +47,6 @@ alarm[1] = tempo_flash;
 // Torres
 pode_posicionar_torre = true;
 torres_disponiveis = 2;
+
+// Inimigos mortos (controle de aleatoriedade)
+inimigos_mortos = 0;
