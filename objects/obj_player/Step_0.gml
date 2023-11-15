@@ -67,7 +67,25 @@ if (_xx != 0 or _yy != 0) and !is_viajando {
 	image_speed = 0;
 }
 
-if keyboard_check_pressed(ord("X")) and torres_disponiveis > 0 {
+// Pode posicionar torre área
+var _list = ds_list_create();
+	
+	var _num = collision_circle_list(x, y+5, 27, obj_torre, true, true, _list, false);
+	
+	if _num > 0 and !is_viajando
+	{
+		pode_posicionar_torre = false;
+	    for (var i = 0; i < _num; ++i;)
+	    {
+	        _list[| i].is_proximo = true;
+	    }
+	} else {
+		pode_posicionar_torre = true;	
+	}
+ds_list_destroy(_list);
+
+
+if keyboard_check_pressed(ord("X")) and !is_viajando and torres_disponiveis > 0 and pode_posicionar_torre {
     new_tower = instance_create_layer(x, y, "Instances", obj_torre);
 	new_tower.previous_tower = last_tower;
 	
@@ -134,4 +152,8 @@ if alarm[0] > 0 {
 
 if vida <= 0 {
 	room_restart();	
+}
+
+if alarm[1] <= 0 {
+	alarm[1] = tempo_flash;	
 }

@@ -40,6 +40,10 @@ ds_map_add(vida_sprites, 10, spr_player_zero_vida);
 
 alarm[0] = 0;
 
-// Torres
+// tempo flashing
+tempo_flash = 12;
+alarm[1] = tempo_flash;
 
+// Torres
+pode_posicionar_torre = true;
 torres_disponiveis = 2;

@@ -16,3 +16,5 @@ if obj_player.last_tower != noone {
 	}
 	ds_list_destroy(_list);
 }
+
+is_proximo = false;
