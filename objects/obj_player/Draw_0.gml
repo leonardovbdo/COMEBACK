@@ -1,5 +1,4 @@
 draw_self();
-draw_sprite_ext(sprite_index, image_index, x, y + sprite_height -3, image_xscale, -image_yscale, image_angle, c_white, .3);
 
 draw_set_font(fnt_pixelated);
 
@@ -40,5 +39,5 @@ if (!is_viajando) {
 	draw_line(last_tower.x, last_tower.y+12, x, y+12);
 	
 	
-	draw_set_alpha(1)
+	draw_set_alpha(1);
 }

@@ -2,35 +2,6 @@ depth = -y;
 
 // Lógica de movimentação 
 
-/*
-
-if keyboard_check(vk_up) {
-	y-= 0.5;	
-}
-
-if keyboard_check(vk_down) {
-	y+= 0.5;	
-}
-
-if keyboard_check(vk_left) {
-	x-= 0.5;	
-}
-
-if keyboard_check(vk_right) {
-	x+= 0.5;	
-}
-
-var _yy = keyboard_check(vk_up) or keyboard_check(vk_down);
-var _xx = keyboard_check(vk_left) or keyboard_check(vk_right);
-
-if _yy or _xx {
-	image_speed =1	
-} else {
-	image_speed = 0;	
-}
-
-*/
-
 right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 up = keyboard_check(ord("W")) or keyboard_check(vk_up);
@@ -122,16 +93,17 @@ if (current_tower != noone) {
 		if is_viajando == true {
 		    x += lengthdir_x(_vel, linha_dir);
 		    y += lengthdir_y(_vel, linha_dir);
-			sprite_index = spr_player_viajando;
-			
 		}
 	}
 }
 
 if is_viajando == false {
 	sprite_index = spr_player	
+} else {
+	sprite_index = spr_player_viajando	
 }
 
+// Reiniciar jogo
 if keyboard_check(ord("R")) {
 	room_restart();	
 }
