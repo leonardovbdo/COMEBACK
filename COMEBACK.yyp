@@ -43,7 +43,9 @@
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"spr_enemy_congelado","path":"sprites/spr_enemy_congelado/spr_enemy_congelado.yy",},},
     {"id":{"name":"spr_player_zero_vida","path":"sprites/spr_player_zero_vida/spr_player_zero_vida.yy",},},
+    {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},},
     {"id":{"name":"spr_player_metade_vida","path":"sprites/spr_player_metade_vida/spr_player_metade_vida.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
@@ -53,6 +55,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_torre","path":"objects/obj_torre/obj_torre.yy",},},
     {"id":{"name":"spr_casa","path":"sprites/spr_casa/spr_casa.yy",},},
+    {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

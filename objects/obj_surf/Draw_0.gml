@@ -6,12 +6,10 @@ if (surface_exists(surf)) {
 		draw_sprite_ext(sprite_index, image_index, x, y + sprite_height - 2, image_xscale, -image_yscale, image_angle, c_white, .7);
 	}
 	
-	/*
-	with(obj_torre) {
-		draw_sprite_ext(sprite_index, image_index, x, y + sprite_height, image_xscale, -image_yscale, image_angle, c_white, .7);
+	with(obj_enemy) {
+		draw_sprite_ext(sprite_index, image_index, x, y + sprite_height - 1, image_xscale, -image_yscale, image_angle, c_white, .7);
 	}
-	*/
-	
+		
 	surface_reset_target();
 	draw_surface(surf,0,0)
 } else {

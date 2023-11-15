@@ -67,9 +67,11 @@ if (_xx != 0 or _yy != 0) and !is_viajando {
 	image_speed = 0;
 }
 
-if keyboard_check_pressed(ord("X")) {
+if keyboard_check_pressed(ord("X")) and torres_disponiveis > 0 {
     new_tower = instance_create_layer(x, y, "Instances", obj_torre);
 	new_tower.previous_tower = last_tower;
+	
+	torres_disponiveis--;
 }
 
 

@@ -39,3 +39,7 @@ ds_map_add(vida_sprites, 20, spr_player_metade_vida);
 ds_map_add(vida_sprites, 10, spr_player_zero_vida);
 
 alarm[0] = 0;
+
+// Torres
+
+torres_disponiveis = 2;

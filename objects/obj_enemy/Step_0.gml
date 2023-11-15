@@ -1,5 +1,7 @@
 depth = -y;
 
+if !is_congelado {
+
 dir = point_direction(x, y, obj_player.x, obj_player.y);
 hspd = lengthdir_x(spd, dir);
 vspd = lengthdir_y(spd, dir);
@@ -12,7 +14,8 @@ if (hspd > 0) {
 
 x += hspd;
 y += vspd;
-
-if place_meeting(x, y, obj_player) and obj_player.is_viajando == true {
-	instance_destroy();	
+} else if is_congelado {
+	sprite_index = spr_enemy_congelado;
+	hspd = 0;
+	vspd = 0;
 }
