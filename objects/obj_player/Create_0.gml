@@ -50,3 +50,5 @@ torres_disponiveis = 2;
 
 // Inimigos mortos (controle de aleatoriedade)
 inimigos_mortos = 0;
+
+//teste
